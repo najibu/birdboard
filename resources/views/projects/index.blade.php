@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Projects</title>
-</head>
-<body>
-    <h1>Birdboard</h1>
+@extends('layouts.app')
+
+@section('content')
+    <div class="flex items-center mb-3">
+        <a href="/projects/create">New project</a>
+
+    </div>
 
     <ul>
         @forelse ($projects as $project)
@@ -16,5 +15,4 @@
             <li>No projects yet.</li>
         @endforelse
     </ul>
-</body>
-</html>
+@endsection
